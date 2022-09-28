@@ -1,3 +1,2 @@
-(let [{ : cmd } vim]
+(let [{: cmd} vim]
   (cmd "colorscheme nightfox"))
-

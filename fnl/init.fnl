@@ -1,3 +1,1 @@
-(require :reiwilde/packer)
-(require :reiwilde/set)
-
+(require :reiwilde/init)
