@@ -7,6 +7,21 @@
   ;; use <C-t> to jump back
   (keymap.set
     :n
-    :<LEADER>gh
+    :<LEADER>lh
     "<CMD>Lspsaga lsp_finder<CR>"
-    opts))
+    opts)
+
+  ;; open lazygit in lspsaga float terminal
+  (keymap.set
+    :n
+    :<LEADER>lt
+    "<CMD>Lspsaga open_floaterm<CR>"
+    opts)
+
+  ;; close floaterm
+  (keymap.set
+    :t
+    :<M-d>
+    "<C-\\><C-n><CMD>Lspsaga close_floaterm<CR>"
+    opts
+  ))

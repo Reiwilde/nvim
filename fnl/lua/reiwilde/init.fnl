@@ -5,6 +5,7 @@
 (require :reiwilde/lspconfig)
 (require :reiwilde/lspsaga)
 (require :reiwilde/telescope)
+(require :reiwilde/neogit)
 
 (require :reiwilde/set)
 

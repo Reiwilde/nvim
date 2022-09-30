@@ -13,4 +13,6 @@
 
     (use {1 :nvim-telescope/telescope.nvim 
           :tag :0.1.0 
-          :requires [:nvim-lua/plenary.nvim]}))))
+          :requires :nvim-lua/plenary.nvim})
+    (use {1 :timuntersberger/neogit
+          :requires :nvim-lua/plenary.nvim}))))

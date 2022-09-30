@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/alexismorel/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
+  neogit = {
+    loaded = true,
+    path = "/Users/alexismorel/.local/share/nvim/site/pack/packer/start/neogit",
+    url = "https://github.com/timuntersberger/neogit"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/Users/alexismorel/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
