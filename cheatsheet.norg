@@ -1,0 +1,10 @@
+** Cheat Sheet
+
+*** Buffer
+
+    : A1 : <leader> b B
+    :: A2 : List all the buffer
+
+*** Test TODO
+    [] - test
+    [] - test 2
