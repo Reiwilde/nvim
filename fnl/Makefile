@@ -5,8 +5,7 @@ all: $(OUT)
 
 clean:
 	rm ../init.lua
-	rm -r ../after/plugin/reiwilde ../lua/reiwilde
-
+	rm -r ../lua/rw
 %.lua: %.fnl
 	@mkdir -p ../$(@D)
 	fennel --compile $< > ../$@

@@ -1,3 +1,1 @@
-/init.lua
-/after/plugin/reiwilde
-/lua/reiwilde
+*.lua

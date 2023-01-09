@@ -5,8 +5,6 @@
   (startup (lambda [use]
     (use :wbthomason/packer.nvim)
 
-    (use :edeneast/nightfox.nvim)
-
     (use {1 :catppuccin/nvim
           :as :catppuccin})
 
@@ -18,8 +16,7 @@
                                                                :<c-k> (mapping.select_prev_item)
                                                                :<c-e> (mapping.abort)
                                                                :<cr> (mapping.confirm {:select true})})
-                              :sources [{:name :nvim_lsp}
-                                        {:name :neorg}]})))})
+                              :sources [{:name :nvim_lsp}]})))})
 
     (use {1 :neovim/nvim-lspconfig
           :after :hrsh7th/nvim-cmp
@@ -44,15 +41,6 @@
                                         :cmd [:typescript-language-server 
                                               :--stdio
                                               :--tsserver-path "./node_modules/typescript/lib"]}))))})
-
-    (use {1 :nvim-neorg/neorg
-          :after :nvim-treesitter/nvim-treesitter
-          :requires :nvim-lua/plenary.nvim
-          :run ":Neorg sync-parsers"
-          :config (fn []
-                    (let [{: setup} (require :neorg)]
-                      (setup {:load  {:core.defaults {}
-                                      :core.norg.completion {:config {:engine :nvim-cmp}}}})))})
 
     (use {1 :nvim-telescope/telescope.nvim 
           :requires :nvim-lua/plenary.nvim
@@ -79,6 +67,7 @@
                                                  :fennel
                                                  :gitignore
                                                  :go
+                                                 :help
                                                  :html
                                                  :java
                                                  :javascript
