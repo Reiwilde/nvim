@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SOURCE=$(dirname $BASH_SOURCE)
+SOURCE=$(realpath $(dirname $0))
 
 rm $SOURCE/bin/tree-sitter
 
