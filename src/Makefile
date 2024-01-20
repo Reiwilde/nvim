@@ -8,7 +8,7 @@ all: build
 build: $(FNL_OUT) $(VIM_OUT)
 
 clean:
-	-rm -r out
+	@-rm -rf out
 
 format:
 	@find . -name "*.fnl" -exec echo "format: {}" \; -exec ../bin/fnlfmt --fix {} \;
@@ -17,10 +17,10 @@ install: build
 	cp -r out/* ../
 
 uninstall:
-	-rm ../*.lua
-	-rm ../*.vim
-	-rm -r ../indent
-	-rm -r ../lua
+	@-rm -f ../*.lua
+	@-rm -f ../*.vim
+	@-rm -rf ../indent
+	@-rm -rf ../lua
 
 out/%.lua: %.fnl
 	@mkdir -p $(@D)
