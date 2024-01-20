@@ -1,3 +1,13 @@
-/init.lua
-/after/plugin/reiwilde
-/lua/reiwilde
+/*
+
+!/README.md
+
+!/.gitignore
+
+!/install.sh
+!/uninstall.sh
+
+!/bin
+!/src
+
+!/lazy-lock.json
