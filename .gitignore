@@ -1,14 +1,9 @@
-/*
+# macos
+.DS_Store
 
-!/LICENSE.md
-!/README.md
+/dist
 
-!/.gitignore
+/indent
+/lua
 
-!/install.sh
-!/uninstall.sh
-
-!/bin
-!/src
-
-!/lazy-lock.json
+*.lua
