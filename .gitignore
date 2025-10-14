@@ -2,8 +2,6 @@
 .DS_Store
 
 /dist
-
 /indent
 /lua
-
-*.lua
+/init.lua

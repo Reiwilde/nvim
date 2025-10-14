@@ -11,10 +11,24 @@
            (let [{: setup} (require :telescope)
                  telescope (require :telescope.builtin)
                  {: add} (require :which-key)]
-             (setup {:defaults {:path_display [:filename_first :truncate]}
-                     :pickers {:find_files {:hidden true}
-                               :live_grep {:additional_args [:--hidden :--trim]
-                                           :glob_pattern [:!/.git :!/.yarn/]}}})
+             (setup {:defaults {:path_display [:filename_first :truncate]
+                                :vimgrep_arguments [:rg
+                                                    :--color=never
+                                                    :--column
+                                                    :--glob=!.git
+                                                    :--glob=!/.yarn
+                                                    :--hidden
+                                                    :--line-number
+                                                    :--no-heading
+                                                    :--smart-case
+                                                    :--trim
+                                                    :--with-filename]}
+                     :pickers {:find_files {:find_command [:rg
+                                                           :--color=never
+                                                           :--files
+                                                           :--glob=!.git
+                                                           :--glob=!/.yarn
+                                                           :--hidden]}}})
              (add [{1 :<Leader>f :group :Telescope}
                    {1 :<Leader>fb 2 telescope.buffers :desc :Buffers}
                    {1 :<Leader>ff 2 telescope.find_files :desc "Find files"}
