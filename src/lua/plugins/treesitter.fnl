@@ -1,6 +1,6 @@
 {1 :nvim-treesitter/nvim-treesitter
- :dependencies []
  :lazy false
+ :version :0.10.0
  :config (fn []
            (let [{: setup} (require :nvim-treesitter.configs)]
              (setup {:ensure_installed [:dockerfile

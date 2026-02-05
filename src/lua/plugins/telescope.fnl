@@ -4,14 +4,15 @@
 
 {1 :nvim-telescope/telescope.nvim
  :branch :master
- ;:tag :0.1.8
  :dependencies [:folke/which-key.nvim :nvim-lua/plenary.nvim]
  :lazy false
+ ;:tag :0.1.8
  :config (fn []
            (let [{: setup} (require :telescope)
                  telescope (require :telescope.builtin)
                  {: add} (require :which-key)]
-             (setup {:defaults {:path_display [:filename_first :truncate]
+             (setup {:defaults {:layout_strategy :vertical
+                                :path_display [:filename_first :truncate]
                                 :vimgrep_arguments [:rg
                                                     :--color=never
                                                     :--column

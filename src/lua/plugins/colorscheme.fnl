@@ -1,4 +1,5 @@
 {1 :neanias/everforest-nvim
+ :branch :main
  :lazy false
  :priority 1000
  :config (fn []

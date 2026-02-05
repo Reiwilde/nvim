@@ -1,5 +1,6 @@
 {1 :neovim/nvim-lspconfig
  :lazy false
+ :version :2.5.0
  :config (fn []
            (let [{: diagnostic} vim
                  {: config} vim.lsp]
